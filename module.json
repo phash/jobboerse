@@ -1,9 +1,9 @@
 {
-    "id": "tasks",
+    "id": "jobboerse",
     "name": "Jobboerse",
-    "description": "Simple Jobboerse for your spaces.",
-    "keywords": ["task", "todo"],
-    "version": "1.5.5",
+    "description": "Simple Jobboerse fuer die Monte.",
+    "keywords": ["job", "jobboerse"],
+    "version": "0.0.1",
     "homepage": "https://github.com/humhub/tasks",
     "humhub": {
         "minVersion": "1.7"

@@ -32,7 +32,7 @@ use humhub\modules\topic\widgets\TopicPicker;
     <?= $form->field($taskForm->task, 'description')->widget(RichTextField::class) ?>
     
     <?= $form->field($taskForm, 'topics')->widget(TopicPicker::class, ['contentContainer' => $taskForm->task->content->container])->label(false) ?>
-    <?= $form->field($taskForm->task, 'duration')->widget(RichTextField::class) ?>
+    <?= $form->field($taskForm->task, 'duration')->textInput(['type' => 'number']) ?>
     <?= $form->field($taskForm, 'is_public')->checkbox() ?>
     <?= $form->field($taskForm->task, 'scheduling')->checkbox(['data-action-change' => 'toggleScheduling']) ?>
 
