@@ -1,7 +1,7 @@
 {
     "id": "tasks",
-    "name": "Tasks",
-    "description": "Simple taskmanager for your spaces.",
+    "name": "Jobboerse",
+    "description": "Simple Jobboerse for your spaces.",
     "keywords": ["task", "todo"],
     "version": "1.5.5",
     "homepage": "https://github.com/humhub/tasks",
