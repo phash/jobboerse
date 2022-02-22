@@ -97,6 +97,7 @@ abstract class AbstractTaskController extends ContentContainerController
                     return $model->content->container->id;
                 }
             ],
+            'duration',
             [
                 'class' => DateTimeColumn::class,
                 'attribute' => 'created_at',

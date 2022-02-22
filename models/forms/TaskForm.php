@@ -335,6 +335,7 @@ class TaskForm extends Model
 
         if($this->task->save()) {
             RichText::postProcess($this->task->description, $this->task);
+            RichText::postProcess($this->task->duration, $this->task);
             // Required for attached files
             $this->task->fileManager->attach(Yii::$app->request->post('fileList'));
             // Save topics
@@ -454,7 +455,7 @@ class TaskForm extends Model
                 'label' => Yii::t('TasksModule.views_index_edit', 'Basic'),
                 'view' => 'edit-basic',
                 'linkOptions' => ['class' => 'tab-basic'],
-                'fields' => ['title', 'task_list_id', 'description', 'topics', 'is_public', 'scheduling'],
+                'fields' => ['title', 'task_list_id', 'description', 'duration', 'topics', 'is_public', 'scheduling'],
             ],
             [
                 'label' => Yii::t('TasksModule.views_index_edit', 'Scheduling'),

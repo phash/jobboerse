@@ -42,6 +42,7 @@ use humhub\modules\tasks\permissions\ManageTasks;
  * @property string $title
  * @property string $color
  * @property string $description
+ * @property integer $duration
  * @property integer $review
  * @property integer $request_sent
  * @property integer $scheduling
@@ -239,7 +240,7 @@ class Task extends ContentActiveRecord implements Searchable
             [['end_datetime'], 'default', 'value' => null],
             [['start_datetime'], 'date', 'format' => $dateFormat],
             [['end_datetime'], 'date', 'format' => $dateFormat],
-            [['all_day', 'scheduling', 'review', 'request_sent'], 'integer'],
+            [['all_day', 'scheduling', 'review', 'request_sent', 'duration'], 'integer'],
             [['cal_mode'], 'in', 'range' => TaskScheduling::$calModes],
             [['assignedUsers', 'description', 'responsibleUsers', 'selectedReminders'], 'safe'],
             [['title'], 'string', 'max' => 255],
@@ -267,6 +268,7 @@ class Task extends ContentActiveRecord implements Searchable
             'title' => Yii::t('TasksModule.models_task', 'Title'),
             'color' => Yii::t('TasksModule.models_task', 'Color'),
             'description' => Yii::t('TasksModule.models_task', 'Description'),
+            'duration' => Yii::t('TasksModule.models_task', 'Duration'),
             'review' => Yii::t('TasksModule.models_task', 'Review by responsible user required'),
             'request_sent' => Yii::t('TasksModule.models_task', 'Extend deadline request'),
             'scheduling' => Yii::t('TasksModule.models_task', 'Scheduling'),

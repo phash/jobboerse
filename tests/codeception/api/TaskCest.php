@@ -55,6 +55,7 @@ class TaskCest extends HumHubApiTestCest
                 'title' => 'Updated title',
                 'description' => 'Updated description',
                 'task_list_id' => null,
+                'duration' => 0,
                 'scheduling' => 0,
                 'all_day' => 1,
                 'selectedReminders' => [],

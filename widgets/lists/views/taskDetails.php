@@ -59,6 +59,12 @@ $color = $task->getColor() ? $task->getColor() : $this->theme->variable('info');
             </div>
         <?php endif; ?>
 
+        <?php if(!empty($task->duration)) : ?>
+            <div class="task-details-body">
+                <?= RichText::output($task->duration)?>
+            </div>
+        <?php endif; ?>
+
         <?php if($task->hasItems()) : ?>
             <div class="task-details-body">
                 <?= TaskChecklist::widget(['task' => $task]) ?>

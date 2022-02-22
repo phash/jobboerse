@@ -24,6 +24,7 @@ class RestDefinitions
             'id' => $task->id,
             'title' => $task->title,
             'description' => $task->description,
+            'duration' => $task->duration,
             'status' => $task->status,
             'start_datetime' => $task->start_datetime,
             'end_datetime' => $task->end_datetime,

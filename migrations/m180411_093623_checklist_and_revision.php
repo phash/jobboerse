@@ -39,6 +39,7 @@ class m180411_093623_checklist_and_revision extends Migration
         $this->addColumn('task', 'request_sent', 'tinyint(4) DEFAULT 0');
         $this->addColumn('task', 'task_list_id', 'int(11) DEFAULT NULL');
         $this->addColumn('task', 'sort_order', 'int(11) DEFAULT 0');
+        $this->addColumn('task', 'duration', 'int(11) DEFAULT 0');
 
         $this->addForeignKey('fk-task-list-task-id', 'task', 'task_list_id', 'content_tag', 'id', 'SET NULL');
 
@@ -50,6 +51,7 @@ class m180411_093623_checklist_and_revision extends Migration
             'task_id' => 'int(11) NOT NULL',
             'title' => 'VARCHAR(255) NOT NULL',
             'description' => 'TEXT NULL',
+            'duration' => 'int(11) DEFAULT 0',
             'completed' => 'tinyint(4) DEFAULT 0',
             'sort_order' => 'int(11) DEFAULT 0',
         ], '');

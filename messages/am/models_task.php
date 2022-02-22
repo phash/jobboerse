@@ -9,6 +9,7 @@ return array (
   'Color' => '',
   'Deadline: ' => '',
   'Description' => '',
+  'Duration' => '',
   'Don\'t add to calendar' => '',
   'End' => '',
   'Extend deadline request' => '',

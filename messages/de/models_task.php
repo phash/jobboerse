@@ -9,6 +9,7 @@ return array (
   'Color' => 'Farbe',
   'Deadline: ' => 'Fristende:',
   'Description' => 'Beschreibung',
+  'Duration' => 'Dauer',
   'Don\'t add to calendar' => 'Nicht zum Kalender hinzufügen',
   'End' => 'Ende',
   'Extend deadline request' => 'Fristverlängerung beantragen',
