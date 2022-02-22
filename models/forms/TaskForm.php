@@ -37,6 +37,11 @@ class TaskForm extends Model
     public $is_public;
 
     /**
+     * @var integer Duration of the Task
+     */
+    public $duration;
+
+    /**
      * @var Task
      */
     public $task;
@@ -335,7 +340,7 @@ class TaskForm extends Model
 
         if($this->task->save()) {
             RichText::postProcess($this->task->description, $this->task);
-            RichText::postProcess($this->task->duration, $this->task);
+            
             // Required for attached files
             $this->task->fileManager->attach(Yii::$app->request->post('fileList'));
             // Save topics

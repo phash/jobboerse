@@ -823,6 +823,10 @@ definitions:
       description:
         type: string
         example: Space task by API description
+      duration:
+        type: integer
+        format: int 64
+        example: 2
       status:
         type: integer
         format: int64

@@ -56,6 +56,7 @@ class RestDefinitions
             'description' => $task->description,
             'status' => $task->status,
             'start_datetime' => $task->start_datetime,
+            'duration' => $task->duration,
             'end_datetime' => $task->end_datetime,
         ];
     }

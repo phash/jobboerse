@@ -57,7 +57,6 @@ class ApiTester extends \ApiTester
                 'title' => $title,
                 'description' => $description,
                 'task_list_id' => $params['task_list_id'],
-                'duration' => $params['duration'],
                 'scheduling' => $params['scheduling'],
                 'all_day' => $params['all_day'],
                 'selectedReminders' => $params['selectedReminders'],
@@ -68,6 +67,7 @@ class ApiTester extends \ApiTester
             ],
             'TaskForm' => [
                 'is_public' => $params['is_public'],
+                'duration' => $params['duration'],
                 'start_date' => $params['start_date'],
                 'start_time' => $params['start_time'],
                 'end_date' => $params['end_date'],

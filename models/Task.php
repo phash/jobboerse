@@ -42,13 +42,13 @@ use humhub\modules\tasks\permissions\ManageTasks;
  * @property string $title
  * @property string $color
  * @property string $description
- * @property integer $duration
  * @property integer $review
  * @property integer $request_sent
  * @property integer $scheduling
  * @property integer $all_day
  * @property string $start_datetime
  * @property string $end_datetime
+ * @property string $duration
  * @property integer $status
  * @property integer $cal_mode
  * @property integer $task_list_id
