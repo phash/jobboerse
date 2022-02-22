@@ -4,7 +4,7 @@
     "description": "Simple Jobboerse fuer die Monte.",
     "keywords": ["job", "jobboerse"],
     "version": "0.0.1",
-    "homepage": "https://github.com/humhub/tasks",
+    "homepage": "https://github.com/phash/jobboerse",
     "humhub": {
         "minVersion": "1.7"
     },
