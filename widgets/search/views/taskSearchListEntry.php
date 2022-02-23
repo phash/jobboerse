@@ -56,8 +56,12 @@ $image = $task->content->container instanceof Space
                     <?= Html::encode($task->title); ?>
                 </h4>
             </div>
-
             <?= TaskBadge::widget(['task' => $task]) ?>
+            <div style="margin-left:20px;display:inline-block">
+                <h4 class="media-heading" style="display:inline-block">
+                Arbeitszeit: <?= Html::encode($task->duration);?> Stunden
+                </h4>
+            </div>
 
             <div class="assigned-users pull-right" style="display: inline;border:0">
                 <?= TaskUserList::widget(['users' => $task->taskResponsibleUsers, 'style' => 'border:2px solid ' . $this->theme->variable('info'), 'type' => Task::USER_RESPONSIBLE]) ?>
