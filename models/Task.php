@@ -241,6 +241,7 @@ class Task extends ContentActiveRecord implements Searchable
             [['start_datetime'], 'date', 'format' => $dateFormat],
             [['end_datetime'], 'date', 'format' => $dateFormat],
             [['all_day', 'scheduling', 'review', 'request_sent', 'duration'], 'integer'],
+            [['duration'], 'required' ],
             [['cal_mode'], 'in', 'range' => TaskScheduling::$calModes],
             [['assignedUsers', 'description', 'responsibleUsers', 'selectedReminders'], 'safe'],
             [['title'], 'string', 'max' => 255],
